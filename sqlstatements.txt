@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS `campaign` (
+  `id` int(11) NOT NULL auto_increment,
+  `company` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+CREATE TABLE IF NOT EXISTS `links` (
+  `id` int(11) NOT NULL auto_increment,
+  `companyId` varchar(50) NOT NULL,
+  `linkDomain` varchar(50) NOT NULL,
+  `link` varchar(50) NOT NULL,
+  `comment` varchar(100) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=72 ;
